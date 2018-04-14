@@ -1,5 +1,4 @@
-function playSound(event) {
-  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+function playAudio(audio) {
   if(!audio) {
     return;
   } else {
@@ -8,14 +7,17 @@ function playSound(event) {
   }
 }
 
-function playSoundClick(event) {
-  console.log(event.target);
-  const audioClick = event.tccccccccccccarget.querySelector(`.key[data-key="${event.target.keyCode}"]`);
-  console.log(audioClick);
-  audioClick.play();
+function keyPress(event) {
+  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+  playAudio(audio);
 }
 
-function keyPress(event) {
+function keyClick(keyCode) {
+  const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+  playAudio(audio);
+}
+
+function keyActive(event) {
   const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
   key.classList.add('highlight');
   document.addEventListener('keyup', function(event) {
@@ -24,6 +26,5 @@ function keyPress(event) {
   });
 }
 
-document.addEventListener('keydown', playSound);
 document.addEventListener('keydown', keyPress);
-document.addEventListener('click', playSoundClick);
+document.addEventListener('keydown', keyActive);

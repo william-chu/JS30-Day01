@@ -25,6 +25,13 @@ h1 {
   text-align: center;
 }
 
+button, button:focus {
+  padding: none;
+  border: none;
+  outline:none;
+  background: transparent;
+}
+
 .key {
   background: #fff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #fff, #d3d3d3);  /* Chrome 10-25, Safari 5.1-6 */
