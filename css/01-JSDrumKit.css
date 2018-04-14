@@ -1,4 +1,4 @@
-html {
+html, body {
   min-height: 100%;
   min-width: 100%;
 }
@@ -9,7 +9,6 @@ body {
   background: linear-gradient(to bottom, #BDFFF3, #4AC29A 100%) no-repeat fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   align-content: center;
   background-size: auto 100%;
-  min-width: 400px;
 }
 
 h1 {
