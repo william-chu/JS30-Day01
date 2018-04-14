@@ -9,64 +9,48 @@
     <title>LiL JS Drummer</title>
   </head>
   <body>
-    <!-- Drum Keyboard -->
-    <h1>LiL JS DRUMMER</h1>
-    <div id="keyboard">
-      <button type="button" onclick="keyClick(65)">
-        <div class="key" data-key="65">
+    <div class="container">
+      <!-- Drum Keyboard -->
+      <h1>LiL JS DRUMMER</h1>
+      <div id="keyboard">
+        <div class="key" data-key="65" onclick="keyClick(65)">
           <kbd>A</kbd><br>
           <span class="sound-type">Clap</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(83)">
-        <div class="key" data-key="83">
+        <div class="key" data-key="83" onclick="keyClick(83)">
           <kbd>S</kbd><br>
           <span class="sound-type">HiHat</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(68)">
-        <div class="key" data-key="68">
+        <div class="key" data-key="68" onclick="keyClick(68)">
           <kbd>D</kbd><br>
           <span class="sound-type">Kick</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(70)">
-        <div class="key" data-key="70">
+        <div class="key" data-key="70" onclick="keyClick(70)">
           <kbd>F</kbd><br>
           <span class="sound-type">OpenHat</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(71)">
-        <div class="key" data-key="71">
+        <div class="key" data-key="71" onclick="keyClick(71)">
           <kbd>G</kbd><br>
           <span class="sound-type">Boom</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(72)">
-        <div class="key" data-key="72">
+        <div class="key" data-key="72" onclick="keyClick(72)">
           <kbd>H</kbd><br>
           <span class="sound-type">Ride</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(74)">
-        <div class="key" data-key="74">
+        <div class="key" data-key="74" onclick="keyClick(74)">
           <kbd>J</kbd><br>
           <span class="sound-type">Snare</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(75)">
-        <div class="key" data-key="75">
+        <div class="key" data-key="75" onclick="keyClick(75)">
           <kbd>K</kbd><br>
           <span class="sound-type">Tom</span>
         </div>
-      </button>
-      <button type="button" onclick="keyClick(76)">
-        <div class="key" data-key="76">
+        <div class="key" data-key="76" onclick="keyClick(76)">
           <kbd>L</kbd><br>
           <span class="sound-type">Tink</span>
-        </div>
-      </button><br>
-      <img src="img/fingerdrum.svg" id="lefthand"><img src="img/fingerdrum.svg" id="righthand">
+        </div><br>
+        <img src="img/fingerdrum.svg" id="lefthand"><img src="img/fingerdrum.svg" id="righthand">
+      </div>
     </div>
     <!-- Audio Key Bind -->
     <audio data-key="65" src="audio/clap.wav"></audio>
