@@ -18,3 +18,9 @@ body {
   font-size: 10px;
   font-family: sans-serif;
 }
+
+.highlight {
+  transform: scale(1.1);
+  border: 2px solid gold;
+  background-color: lightyellow;
+}
