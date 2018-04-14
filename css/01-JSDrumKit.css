@@ -33,23 +33,25 @@ body {
 }
 
 .key {
-  background: #F7E6B7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #F7E6B7, #EEC963);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #F7E6B7, #EEC963); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom right, #fff, #d3d3d3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, #fff, #d3d3d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 3px solid #C963EE;
-  border-radius: 3px;
+  border-radius: 5px;
   display: inline-block;
   margin: 5px;
   height: 70px;
   width: 70px;
   text-align: center;
   transition: all 0.05s;
+  box-shadow: 2px 2px #4bc29a;
 }
 
 .sound-type {
   color: #14B389;
-  font-size: 15px;
-  font-family: monospace, sans-serif;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 .highlight {
