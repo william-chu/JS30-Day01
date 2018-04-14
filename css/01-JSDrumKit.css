@@ -1,0 +1,14 @@
+.key {
+  border: 1px solid darkgray;
+  border-radius: 2px;
+  float: left;
+  width: 90px;
+  height: 60px;
+  text-align: center;
+}
+
+.sound-type {
+  color: teal;
+  font-size: 10px;
+  font-family: sans-serif;
+}
