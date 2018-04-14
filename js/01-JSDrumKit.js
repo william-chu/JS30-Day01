@@ -8,6 +8,13 @@ function playSound(event) {
   }
 }
 
+function playSoundClick(event) {
+  console.log(event.target);
+  const audioClick = event.tccccccccccccarget.querySelector(`.key[data-key="${event.keyCode}"]`);
+  console.log(event.target);
+  audioClick.play();
+}
+
 function keyPress(event) {
   const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
   key.classList.add('highlight');
@@ -19,3 +26,4 @@ function keyPress(event) {
 
 document.addEventListener('keydown', playSound);
 document.addEventListener('keydown', keyPress);
+document.addEventListener('click', playSoundClick);
