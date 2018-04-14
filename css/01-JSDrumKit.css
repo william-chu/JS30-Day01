@@ -2,21 +2,6 @@ html {
   min-height: 100%;
 }
 
-h1 {
-  font-family: 'Kirang Haerang', sans-serif;
-  font-size: 5em;
-  text-align: center;
-  color: #C963EE;
-  text-shadow: 0 5px #E6B7F7;
-}
-
-kbd {
-  font-family: 'Kirang Haerang', sans-serif;
-  font-size: 35px;
-  color: #C963EE;
-  text-shadow: 0 2px #E6B7F7;
-}
-
 body {
   background: #4AC29A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #BDFFF3, #4AC29A 100%) no-repeat fixed;  /* Chrome 10-25, Safari 5.1-6 */
@@ -26,16 +11,24 @@ body {
   min-width: 400px;
 }
 
+h1 {
+  margin: 10px 0;
+  font-family: 'Kirang Haerang', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  color: #C963EE;
+  text-shadow: 0 3px #E6B7F7;
+}
+
 #keyboard {
-  margin-top: 50px;
-  width: 100%;
+  margin-top: 0;
   text-align: center;
 }
 
 .key {
   background: #fff;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom right, #fff, #d3d3d3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom right, #fff, #d3d3d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #fff, #d3d3d3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fff, #d3d3d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 3px solid #C963EE;
   border-radius: 5px;
   display: inline-block;
@@ -44,11 +37,18 @@ body {
   width: 70px;
   text-align: center;
   transition: all 0.05s;
-  box-shadow: 2px 2px #4bc29a;
+  box-shadow: 0 2px #14B389;
+}
+
+kbd {
+  font-family: 'Kirang Haerang', sans-serif;
+  font-size: 35px;
+  color: #C963EE;
+  text-shadow: 0 2px #E6B7F7;
 }
 
 .sound-type {
-  color: #14B389;
+  color: #666666;
   font-size: 12px;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -60,11 +60,17 @@ body {
 }
 
 img {
-  width: 150px;
+  width: 175px;
   margin-top: 10px;
   display: inline-block;
 }
 
-.reverse {
-  transform: scaleX(-1);
+#lefthand {
+  transform: rotate(100deg);
+}
+
+#righthand {
+  transform:
+    scaleX(-1)
+    rotate(100deg);
 }

@@ -8,12 +8,12 @@ function playSound(event) {
   }
 }
 
-// function playSoundClick(event) {
-//   console.log(event.target);
-//   const audioClick = event.tccccccccccccarget.querySelector(`.key[data-key="${event.target.keyCode}"]`);
-//   console.log(audioClick);
-//   audioClick.play();
-// }
+function playSoundClick(event) {
+  console.log(event.target);
+  const audioClick = event.tccccccccccccarget.querySelector(`.key[data-key="${event.target.keyCode}"]`);
+  console.log(audioClick);
+  audioClick.play();
+}
 
 function keyPress(event) {
   const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
