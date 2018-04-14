@@ -7,24 +7,25 @@ function playAudio(audio) {
   }
 }
 
+function keyTransform(key) {
+  key.classList.add('highlight');
+  setTimeout(function() {
+    key.classList.remove('highlight');
+  }, 100)
+}
+
 function keyPress(event) {
   const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+  const keyActive = document.querySelector(`.key[data-key="${event.keyCode}"]`);
   playAudio(audio);
+  keyTransform(keyActive);
 }
 
 function keyClick(keyCode) {
   const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
+  const keyActive = document.querySelector(`.key[data-key="${keyCode}"]`);
   playAudio(audio);
-}
-
-function keyActive(event) {
-  const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
-  key.classList.add('highlight');
-  document.addEventListener('keyup', function(event) {
-    const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
-    key.classList.remove('highlight');
-  });
+  keyTransform(keyActive);
 }
 
 document.addEventListener('keydown', keyPress);
-document.addEventListener('keydown', keyActive);
